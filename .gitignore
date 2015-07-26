@@ -43,6 +43,7 @@ Thumbs.db
 *.png
 *.svg
 *.ico
+*.ai #This setting may have problems
 
 # Video #
 ######################
