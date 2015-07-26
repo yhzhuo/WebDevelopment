@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up - UWexchanger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 0px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 900px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+		max-width: 285px;
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+	  
+	  hr.lines {
+		visibility:hidden;
+		clear:both;
+	  }
+	  
+	div.responseBox {
+		color: #999999;
+		float: right;
+		width: 450px;
+	}
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+  
+<?php include('global/top.htm'); ?>
+    <div class="container">
+	<div style="height: 150px;"></div>
+	<form class="form-signin" style="height: 60px; vertical-align:middle;">
+		<!-- <div style="float: left; height: 1px;"> </div> -->
+		<!-- <hr class="lines" />  -->
+		<div style="float: left; width: 260px;" >
+			<h2 class="form-signin-heading" style="text-align: center">UWexchanger!!!</h2>
+		</div>
+		<div class="form-signin-heading" style="text-align: left; float:right; width: 60px;"><img src="register/dog.jpg" alt="" /></div>
+		<!-- 
+		<div style="vertical-align:middle; height: 60px;"> 
+			<div>
+				<div class="form-signin-heading" style="text-align: left; float:left; font-size: 30px; font-weight: bold; height: 60px; vertical-align:middle; width:100px;" >UWexchanger!!!</div>
+				<div class="form-signin-heading" style="text-align: left; float:right;"><img src="login/dog.jpg" alt="" /></div>
+			</div>
+		</div>
+		-->
+	</form>
+	  
+      <form class="form-signin" action="login.php" method="POST" id="mainForm">
+        <h2 class="form-signin-heading">Please sign in</h2>
+		<div style="float: left;"><input type="text" name="email" id="email" class="input-block-level" placeholder="*UW Net ID" onblur="checkEmailValid()" /></div><div style="float: left; font-size: 16px; height: auto; margin-bottom: 15px; padding: 7px 9px; vertical-align:middle;">@uw.edu</div><div id="r0" name="response" class="responseBox" >Inter your UW id on the left please.</div>
+		<hr class="lines" />
+		<input type="text" name="username" id="uname" onblur="checkNameValid()" class="input-block-level" placeholder="*Your Name" /><div id="r1" name="response" class="responseBox" >Inter your username whatever you like. Min length:6; Max length :32</div>
+		<hr class="lines" />
+		<input type="password" name="password1" id="pw1" onblur="checkPasswordValid1()" class="input-block-level" placeholder="*Password" /><div id="r2" name="response" class="responseBox" >Min length:6, Max length :32 characters</div>
+		<hr class="lines" />
+		<input type="password" name="password2" id="pw2" onblur="checkPasswordValid2()" class="input-block-level" placeholder="*Password Again" /><div id="r3" name="response" class="responseBox" >Please inter your password again</div>
+		<hr class="lines" />
+		<div style="float: left;">
+			<textarea rows="10" cols="71" name="situation"  id="situationArea" onblur="checkSituationValid()" class="input-block-level" style="max-width: 350px;" placeholder="*Type your situation and contact information here" ></textarea>
+		</div><div id="r4" name="response" class="responseBox" >Please describe your current situation and enter your contact information in less than 240 characters.</div>
+		<hr class="lines" />
+		<div style="float: left;"><?php $type = "need"; include('global/coursesInput');?></div><div style="float: right;"><?php $type = "dont"; include('global/coursesInput');?></div>
+		<hr class="lines" />
+		<label for="regname"><font id="showQuestion">A easy question</font><span class="s1">*<font color="#000000" id="question"></font></span></label>
+		<div style="float: left; font-size: 16px; height: auto; margin-bottom: 15px; padding: 7px 9px; vertical-align:middle;">+=</div>
+		<input type="text" name="answer" size="4" id="question" style="float: left; max-width: 65px" onblur="checkCalValid()" /> <div id="r5" name="response" class="responseBox" >I'm sure you can do it!</div>
+		
+		
+       <!-- 
+	   <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+		-->
+       <hr class="lines" />
+	   <button class="btn btn-large btn-primary" type="submit">Sign Up!!!</button>
+		<div style="float: right; width: 50px; ">
+			<div style="float: right; width: 50px; height: 20px;"></div>
+			<a href="register.php" >Login</a>
+		</div>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!--
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+	-->
+
+  </body>
+</html>

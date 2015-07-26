@@ -1,0 +1,51 @@
+<!-- <div class="cl_wrapper" id="cl_wrapper" style="z-index:1; position:fixed; width: 100%; height: 100%; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; left:0px; top:0px; background-color:#00ff00;">  -->
+		<!--  background:rgba(255, 255, 255, 0.6)!important; filter:Alpha(opacity=60); background:#fff; -->
+<div class="cl_wrapper" id="cl_wrapper" style="z-index:1; position:fixed; width: 100%; left:0px; top:0px; height: 100%; background:rgba(120, 115, 120, 0.6)!important; filter:Alpha(opacity=60); background:#787378;">
+		<script language="javascript">
+			var cl_cateListId;   //the id of the category list button which use this list
+			var cl_classList;    //the list of all classes of this category
+			var cl_cateName;     //the name of this category
+			var cl_sortBy;       //order of the result
+			var cl_begin;        //index of the begin place of next mysql result
+			//var cl_cate;         //may be useless
+		</script>
+		<!-- <script type="text/javascript" src="global/cate_list/cate_function.js"></script>  -->
+		<center>
+			<div class="cl_containter" style="margin-left: auto; position:relative; top: 50px; margin-right: auto; vertical-align: middle; width: 700px; z-index: 2; filter:alpha(opacity=100); -moz-opacity:1.0; -khtml-opacity: 1.0; opacity: 1.0; background:#FFFFFF;">
+				<div class="top_info" style="float: left; width: 100%">
+					<div class="navbar"> <!-- style="float: left; width: 658px;"  -->
+						<div class="navbar-inner" style="width: 100%;">
+							<a class="brand" href="">Sort By</a>
+							<ul class="nav">
+								<li><a href="javascript: cl_sortBy('default')">Default&nbsp;&nbsp;&nbsp;</a></li>
+								<li><a href="javascript: cl_sortBy('alphabet')">Alphabetical order&nbsp;&nbsp;&nbsp;</a></li> <!-- class="active" -->
+								<li><a href="javascript: cl_sortBy('createTime')">create time&nbsp;&nbsp;&nbsp;</a></li>
+							</ul>
+							<ul class="nav pull-right">
+								<li style="display: inline; position: relative; top: 10px;"><button type="button" class="close" onclick="cl_closeCateList()" >&times;</button>  <!--  data-dismiss="alert"   --></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<hr style="clear: both; visibility: hidden;" />
+				<div class="cl_classes" id="cl_classes" style="float: left; width: 100%; ">
+					<!-- <div class="aClass" style="float: left; width: 100px; height: 10px;"><a onclick="cl_chooseThisClass(classId)" id="class_111111">class name</a></div>  -->   <!-- may have problem -->
+					<div style="float: left; width: 30%;">
+						<div style="float: left; width: 70%;">
+							<textarea style="width: 100%; height: 40px; max-width: 100%; max-height: 100%" class="input-block-level" placeholder="Add new class" id="cl_addNewClass" ></textarea>
+						</div>
+						<div style="float: left; width: 30%;">
+							<button class="btn btn-large btn-block btn-success" style="width: 100%;" type="button" onclick="cl_addNewClass()" >ok</button>
+						</div>
+					</div>
+				</div>
+				
+				<hr style="clear: both; visibility: hidden;" />   <!--    visibility: hidden;   -->
+				<div class="bottom_info" style="height: 40px; width: 100%; float: left; ">
+					<button class="btn btn-large btn-block btn-success" style="width: 100%;" type="button" onclick="cl_addNewPage()" >See More</button>
+				</div>
+				
+			</div>
+		</center>
+</div>

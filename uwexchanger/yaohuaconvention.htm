@@ -1,0 +1,194 @@
+<xmp>
+Yaohua convention
+
+Author: ZHUO, Yaohua
+Last Edit: 2013/3/26
+
+Introduction: This kind of documentation language is used for group leader to distribute jobs during team collaboration
+it's not a kind of programming language
+
+General Idea: This kind of documentation use the idea of html, xml codes and intends to show 
+the relationships between different modules, and requirements of each modules by a clear simple
+way.
+
+Details:
+1. tag :<*> ... :</*> is a module tag that represent a module. * can be replaced by any words which represents
+the name of this module. The requirements of this module is included between :<*> and :</*>
+( expressed by "..." ) here, and always expressed by self-closing tags
+example:
+:<send>
+	<property>
+		element=button OR input[type=button]
+		class=send
+		id=send#
+	</property>
+	<function>
+		click the :<send>, send the message in inputBox
+		and clear the message in inputBox
+	</function>
+:</send>
+Note: the module tag gives yaohua convention extensibility. because when the high project manager distribute a big module
+to a low project manager, the lower project manager can divide this big module into small modules and create more specific 
+yaohua convention documentations for lower project managers or programmers who actually build it, and make a hyperlink of 
+his own documentations about how he split and manage the work, and this big module specific details on high project manager's
+documentation of this module
+
+
+2. other self-closing tags <*> </*> that are not begin with ":" like <property></property> 
+is a documentation tag that express one category of requirements of the module incoperate it.
+They are usually but not always <property></property>, <function></function>, <note></note>, <require></require>
+
+	<property></property>: the properties of this module that programmers must build in to their work. Those properties are always used
+	as interfaces between different modules. for html elements, there are usually
+	some properties like element, class, id and so on:
+	element: the html tag that programmer must used to make this module
+	class: the "class" properties of this module
+	id: the "id" properties of this module
+		example: 
+		<property>
+			element=button OR input[type=button]    // you must use <button></button> or <input type="button" /> to finish this module
+			class=send    //the overall html element must have "class=send"
+			id=send#    //the overall html element must have "id=send#"
+		</property>
+		
+	<function></function>: the function of this module
+		example: 
+		<function>
+			click the :<send>, send the message in inputBox
+			and clear the message in inputBox
+		</function>
+		
+	<note></note>: the complement introduction of this element
+		example:
+		<note>
+			the :<groupName> here should appear at the top left corner
+		</note>
+	
+	<require></require>: what are required for programmers to follow during their works.
+		example:
+		<require>
+			normally it's invisible (display = none)
+			when it is shown by javascript codes, it should
+			appear just above the :<boxButton> that refers to it
+		</require>
+
+
+3. tag :<*>...:</*> can include other :<*>...:</*> inside, it means one module is in another 
+module
+example:
+	:<chatBox>
+		<function>
+			a chat box that just like 
+			the chat box of career cup
+		</function>
+		:<send>
+			<property>
+				element=button OR input[type=button]
+				class=send
+				id=send#
+			</property>
+			<function>
+				click the :<send>, send the message in inputBox
+				and clear the message in inputBox
+			</function>
+		:</send>
+	:</chatBox>
+	
+4. for a module represented by :<*>...:</*> tag:
+	@fileName.tagName1.tagName2.....tagNameN means this module has all the documentations that refered by fileName.tagName1.tagName2.....tagNameN, 
+	^fileName.tagName1.tagName2.....tagNameN means this module do not have all the documentations that refered by fileName.tagName1.tagName2.....tagNameN. 
+		here, "all the documentations" includes the documentations that imported by fileName.tagName1.tagName2.....tagNameN
+	If two tags are in the same file or there is a statement import.fileName, the fileName of the reference can be omitted.
+	For resolving problem when a documentation tag and a module tag in the same location, the tagName can be surronded by <> or :<> to show if is refers a 
+		module or one documentation tag of a module. but it's oprional
+	
+	
+	example:
+	if the top :<groupName> is in the file1 and hope to 
+		1. import the documentations of bottom :<groupName2> in file2
+		2. not import documentations in :<groupName3> in file3
+		3. create a documentations same as one documentation in :<groupName3>
+		:<groupName @file2.groupName2 ^file3.groupName3>
+			<note>
+				the :<groupName> here should appear at the top left corner
+			</note>
+			<function>
+				:<groupName> want the function of :<groupName3>
+			</function>
+		:</groupName>
+		
+		:<groupName2 @file3.groupName3>
+			<note>
+				this is the name of the chating group that using this :<chatBox>
+			</note>
+			<function>
+				just use the group name and do nothing else
+			</function>
+			<property>
+				element=div
+				class=groupName
+				id=groupName#   // the # of this :<boxButton> is associate with the :<chatBox> that it refer to
+			</property>
+		:</groupName2>
+		
+		:<groupName3>
+			<note>
+				:<groupName> don't want the note of :<groupName3>
+			</note>
+			<function>
+				:<groupName> want the function of :<groupName3>
+			</function>
+		:</groupName3>
+		note: 
+		1. @file2.groupName2 ^file3.groupName3 is same as @file2.:<groupName2> ^file3.:<groupName3>
+		2. 
+		:<groupName @file2.groupName2 ^file3.groupName3>
+			<note>
+				the :<groupName> here should appear at the top left corner
+			</note>
+			<function>
+				:<groupName> want the function of :<groupName3>
+			</function>
+		:</groupName> is same as
+		:<groupName @file2.:<groupName2>.<note> @file2.:<groupName2>.<function> @file2.:<groupName2>.<property> @file3.:<groupName3>.<function>>
+			<note>
+				the :<groupName> here should appear at the top left corner
+			</note>
+		:</groupName> is same as 
+		:<groupName>
+			<note>
+				the :<groupName> here should appear at the top left corner
+				
+				this is the name of the chating group that using this :<chatBox>
+			</note>
+			<function>
+				just use the group name and do nothing else
+				
+				:<groupName> want the function of :<groupName3>
+			</function>
+			<property>
+				element=div
+				class=groupName
+				id=groupName#   // the # of this :<boxButton> is associate with the :<chatBox> that it refer to
+			</property>
+		:</groupName>
+		
+		
+		
+5. // means complementary comments. it can be added in to any where in the documentation. it's just a reminder for programmers
+which means that it don't affect the structure of the documentation
+	example: 
+	:<groupName2>  // @file3.groupName3
+	
+	:<groupName2>
+	in this case @file3.groupName3 is not imported
+	
+6. in the content parts of docmentations, the EXACT module names must be included in :<>, and the EXACT documentation names must be included in <>
+	example: 
+	:<groupName> want the function of :<groupName3>
+	
+	here, I refers to the EXACT module :<groupName> and :<groupName3> but not refer to
+	the EXACT documentation <function> of :<groupName3>
+	EXACT means "I just refers to THIS but not OTHERS"
+	
+</xmp>

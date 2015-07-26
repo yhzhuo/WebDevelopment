@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up - UWexchanger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 0px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form-signin {
+        max-width: 900px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+		max-width: 285px;
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+	  
+	  hr.lines {
+		visibility:hidden;
+		clear:both;
+	  }
+	  
+	div.responseBox {
+		color: #999999;
+		float: right;
+		width: 450px;
+	}
+	
+	.header {
+		text-align: center;
+	}
+	
+	.stepHeader {
+		
+	}
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+	<script language="javascript">
+		<?php
+			include_once('jsparts/global_function.js');
+			include_once('newin/newin_function.js');
+		?>
+	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!-- <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>  -->
+	<!-- <script type="text/javascript" src="register/register_function.js"></script>   -->
+	<!-- <script type="text/javascript" src="jsparts/global_function.js"></script>   -->
+  </head>
+
+  <body onload="preparation()">
+  <script language="javascript">
+//remember to import global_function.js
+	var rand1;
+	var rand2;
+	var emailvalid = false;
+	var namevalid = false;
+	var passwordValid1 = false;
+	var passwordValid2 = false;
+	var calValid = false;
+	var situationValid = true;
+	var originalPwInfo1 = "";
+	var originalPwInfo2 = "";
+	var originalEmInfo = "";
+	var originalNameInfo = "";
+	var originalStuaInfo = "";
+	
+	
+	var stepId = 1;
+	
+	/*
+	$("span").onmouseover(function() {
+		alert("in1");
+		$("html").css("cursor:pointer");
+	});
+	$("span").onmouseoout(function() {
+		alert("in2");
+		$("html").css("cursor:auto");
+	});
+	*/
+</script>
+<?php include('global/top.htm'); ?>
+    <div class="container">
+	<div style="height: 50px;"></div>
+	<form class="form-signin" style="height: 60px; vertical-align:middle;">
+		<!-- <div style="float: left; height: 1px;"> </div> -->
+		<!-- <hr class="lines" />  -->
+		<div style="float: left; width: 260px;" >
+			<h2 class="form-signin-heading" style="text-align: center;">UWexchanger!!!</h2>
+		</div>
+		<div class="form-signin-heading" style="text-align: left; float:right; width: 60px;"><img src="global/logo.jpg" alt="" style="width: 184px; heigth: 171px;" /></div>
+		<!-- 
+		<div style="vertical-align:middle; height: 60px;"> 
+			<div>
+				<div class="form-signin-heading" style="text-align: left; float:left; font-size: 30px; font-weight: bold; height: 60px; vertical-align:middle; width:100px;" >UWexchanger!!!</div>
+				<div class="form-signin-heading" style="text-align: left; float:right;"><img src="login/dog.jpg" alt="" /></div>
+			</div>
+		</div>
+		-->
+	</form>   <!--  $("html").css("cursor:pointer"); -->
+	  
+		<form class="form-signin" action="register.php" method="POST" id="myForm" >
+			<div id="different_steps" style="width: 100%">
+				<div style="width: 100%">
+					<div class="header stepHeader" style="float: left;">
+						<span class="step step1" onclick="changeProcess(1)">Step 1   >>   </span>
+						<span class="step step2" onclick="changeProcess(2)">Step 2   >>   </span>
+						<span class="step step3" onclick="changeProcess(3)">Step 3</span>
+					</div>
+					<div style="float: right;">I have already registered. <a href="login.php">Login</a></div>
+				</div>
+				<hr class="lines" />
+				<div id="result" style="display:none; margin-left: auto; margin-right: auto;">
+					<div style="width: 100%; height: 50px; text-align: center; vertical-align: center;">
+						<span class="badge badge-important" style="font-size: 20px; ">People who may give you courses or need your courses!!!</span>
+					</div>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+							  <th>name</th>
+							  <th>courses s/he needs</th>
+							  <th>courses s/he dosen&#39;t need</th>
+							  <th>his/her situation &amp; contact information</th>
+							  <th>Update Time</th>
+							</tr>
+						</thead>
+						<tbody id="mainContent">
+							
+						</tbody>
+					</table>
+				</div>
+				
+				
+				<hr class="lines" />
+				<div id="step1">
+					<div style="margin-left: auto; margin-right: auto; width: 65%">
+						<?php $type = "need"; $glbtable_width = "50%"; $glbtable_center = true; include('global/testtable.htm');?>
+					</div>
+				</div>
+				<div id="step2">
+					<div style="margin-left: auto; margin-right: auto; width: 65%">
+						<?php $type = "dont"; include('global/testtable.htm');?>
+					</div>
+				</div>
+				<div id="step3">
+					<h2 class="form-signin-heading">Please sign up first :)</h2>
+					<div style="float: left;"><input type="text" name="email" id="email" class="input-block-level" placeholder="*UW Net ID" onblur="checkEmailValid()" /></div><div style="float: left; font-size: 16px; height: auto; margin-bottom: 15px; padding: 7px 9px; vertical-align:middle;">@uw.edu</div><div id="r0" name="response" class="responseBox" >Inter your UW net id, when you login, use your UW email address</div>
+					<hr class="lines" />
+					<input type="text" name="username" id="uname" onblur="checkNameValid()" class="input-block-level" placeholder="*Your Name" /><div id="r1" name="response" class="responseBox" >Inter your username whatever you like. Min length:6; Max length :32</div>
+					<hr class="lines" />
+					<input type="password" name="password1" id="pw1" onblur="checkPasswordValid1()" class="input-block-level" placeholder="*Password" /><div id="r2" name="response" class="responseBox" >Min length:6, Max length :32 characters</div>
+					<hr class="lines" />
+					<input type="password" name="password2" id="pw2" onblur="checkPasswordValid2()" class="input-block-level" placeholder="*Password Again" /><div id="r3" name="response" class="responseBox" >Please inter your password again</div>
+					<hr class="lines" />
+					<div style="float: left;">
+						<textarea rows="10" cols="71" name="situation"  id="situationArea" onblur="checkSituationValid()" class="input-block-level" style="max-width: 350px;" placeholder="*Type your situation and contact information (Phone number suggested) here" ></textarea>
+					</div><div id="r4" name="response" class="responseBox" >Please describe your current situation and enter your contact information (phone number suggested) in less than 240 characters.</div>
+					<hr class="lines" />
+					<div style="float: left; font-size: 16px; height: auto; margin-bottom: 15px; padding: 7px 9px; vertical-align:middle;"><label for="regname">*A easy question: <font id="showQuestion"></font></div>
+					<!-- <span class="s1"> <font color="#000000" id="question"></font></span> --></label>
+					<!-- <div style="float: left; font-size: 16px; height: auto; margin-bottom: 15px; padding: 7px 9px; vertical-align:middle;">+=</div>  -->
+					<input type="text" name="answer" size="4" id="question" style="float: left; max-width: 65px" onblur="checkCalValid()" /> <div id="r5" name="response" class="responseBox" >I'm sure you can do it!</div>
+					<input type="hidden" name="step" value="1" />
+				</div>
+			</div>
+			<!-- ------------------hidden values to be submitted begin------------------ -->
+			<!--  email password1 situation sendCourses username needAll dontAll -->
+			<input type="hidden" name="needAll" id="needAll" value="" />
+			<input type="hidden" name="dontAll" id="dontAll" value="" />
+			
+			
+			<!-- ------------------hidden values to be submitted end------------------ -->
+			<hr class="lines" />
+			<input type="button" style="float: left;" class="btn btn-success" onclick="backStep()" value="<< Back" />
+			<input type="button" style="float: right;" class="btn btn-success" onclick="nextStep()" value="Next >>" />
+		</form>
+
+		 <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!--
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+	-->
+
+  </body>
+</html>

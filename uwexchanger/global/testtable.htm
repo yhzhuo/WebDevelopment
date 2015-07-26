@@ -1,0 +1,88 @@
+	<?php
+		if($type == "need") {
+			$type = "n";
+			$tabStart = 0;
+			$title = "Add courses I need but I don't have";
+			$titleStyle = "success";
+		} else {
+			$type = "d";
+			$tabStart = 15;
+			$title = "Add courses I have but I don't need";
+			$titleStyle = "warning";
+		}
+		
+		if(!$fontSize) {
+			$fontSize = 15;
+		}
+		
+		if(!$glbtable_width) {
+			$glbtable_width = "255px";
+		}
+		if($glbtable_center) {
+			$align = "margin-left:auto; margin-right:auto;";
+		} else {
+			$algin = "";
+		}
+	?>
+	<div style="width: <?php echo $glbtable_width; ?>; heigth: 300px; <?php echo $align; ?>">
+		<div style="text-align: center; width: 100%; height: 30px;" >
+			<span class="badge badge-<?php echo $titleStyle; ?>" style="font-size: <?php echo $fontSize; ?>px;"><?php echo $title; ?></span>
+		</div>
+		<p>&nbsp;</p>
+		<div>
+            <table class="table table-bordered table-hover table-condensed">
+              <thead>
+                <tr style="font-size: 10px;">
+                  <th style="width: 85px;">Curriculum<br /> Abbreviation</th>
+                  <th style="width: 85px;">Course<br /> Number</th>
+                  <th style="width: 85px;">&nbsp;<br />Section</th>
+                </tr>
+              </thead>
+              <tbody>
+			  <tr>
+                <td style="width: 50px;">
+				<?php
+				/*
+					for($i = 1; $i <= 5; $i++) {
+						echo "<input type=text name=N1 id=n1 tabIndex=".($i - 1)*3 + 1." class=input-block-level />";
+					}
+					*/
+					
+					for($i = 0; $i < 5; $i++) {
+						echo "						";
+						echo "<input type='text' name='N1' id='";
+						echo $type.($i*3)."' tabIndex='";
+						echo ($i*3 + 1)+$tabStart."' class='input-block-level' />";
+						echo "
+";
+					}
+				?>
+                </td>
+				<td style="width: 100px;">
+				<?php
+					for($i = 0; $i < 5; $i++) {
+						echo "						";
+						echo "<input type='text' name='N1' id='";
+						echo $type.($i*3 + 1)."' tabIndex='";
+						echo ($i*3 + 1 + 1)+$tabStart."' class='input-block-level' />";
+						echo "
+";
+					}
+				?>
+				<td style="width: 100px;">
+				<?php
+					for($i = 0; $i < 5; $i++) {
+						echo "						";
+						echo "<input type='text' name='N1' id='";
+						echo $type.($i*3 + 1 + 1)."' tabIndex='";
+						echo ($i*3 + 1 + 1 + 1)+$tabStart."' class='input-block-level' />";
+						echo "
+";
+					}
+				?>
+                </td>
+				</tr>
+              </tbody>
+            </table>
+			</div>
+			</div>

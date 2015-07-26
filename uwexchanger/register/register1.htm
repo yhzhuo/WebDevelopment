@@ -1,0 +1,307 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" type="text/css" href="../cssparts/global.css" />
+<title>register</title>
+<style>
+
+
+td.smallTitle {
+	font-family: Candara;
+	color: #3333CC;
+	font-size: 15px;
+	font-style:italic;
+	font-weight:bold;
+	background-image: url(../images/dhqltxt.jpg);
+}
+
+div.inputArea {
+	border-color: #CEE1EE;
+	border-style:solid;
+	border-width: 0px;
+	float: left;
+	width: 260px; 
+	height: 170px;
+}
+
+tr.inputArea td {
+	border-style:solid;
+	border-width: 1px;
+	border-color: #CEE1EE;
+}
+
+</style>
+</head>
+
+<script language="javascript">
+//remember to import global_function.js
+	var rand1 = Math.random();    //top js
+	var rand2 = Math.random();
+	var emailvalid = false;
+	var namevalid = false;
+	var passwordValid1 = false;
+	var passwordValid2 = false;
+	var calValid = false;
+	var situationValid = false;
+	//var humanvalid = false;   check if the client is a normal human when submitting
+	rand2 = parseInt(rand2*10+1);     //two random numbers 1~10
+	rand1 = parseInt(rand1*10+1);
+</script>
+<script language="javascript">
+<?php 
+	include_once('jsparts/global_function.js');
+?>
+</script>
+<script language="javascript">
+<?php
+	include_once('register/register_function.js');
+?>
+</script>
+<body>
+<center>
+<?php
+	include('global/top.htm');
+?>
+<div class="mainWrapper">
+<table border="1" width="700px" style="border-collapse: collapse" bordercolor="#C0D8EA">
+			<tr>
+				<td>
+				<img border="0" src="../images/zc_zctx.jpg" width="45" height="46"><span lang="en-us"><font color="#9A9A9A"><b>registering</b></font></span>
+				
+				<p>
+				<p align="right"><a href="login.php">I have registered</a></p>
+				<hr width="95%" size="1">
+				<div align="right">
+		<form action="register.php" method="POST" enctype="multipart/form-data" id="myForm" onsubmit="formSubmit()">
+				<table border="0" width="966px" style="border-collapse: collapse">
+					<tr>
+						<td colspan="2"><label for="regname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						UW email address<span class="s1">*</span></label>
+						<input type="text" name="email" size="20" value="" id="email" onblur="checkEmailValid()">@uw.edu<div id="r0" name="response" style="float: right" width="200">
+							</div><center><table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><font color="#999999" size="2">
+								Inter your UW id above please.
+</font></td>
+							</tr>
+						</table></center>
+						<p>　</td>
+					</tr>
+										<tr>
+						<td colspan="2"><label for="regname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name<span class="s1">*</span></label>
+						<input type="text" name="username" size="20" value="" id="uname" onblur="checkNameValid()"><div id="r1" name="response" style="float: right" width="200">
+							&nbsp;</div><center><table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><font color="#999999" size="2">
+								Inter your username whatever you like.<span lang="en-us">
+								</span>Min length:6,<span lang="en-us"> </span>
+								max length :32
+								<span lang="en-us">characters</span>
+</font></td>
+							</tr>
+						</table></center>
+						<p>　</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label for="regname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						&nbsp;&nbsp;password<span class="s1">*</span></label>
+						<input type="password" name="password1" size="22" id="pw1" onblur="checkPasswordValid1()"><div id="r2"name="response" style="float: right"  width="200">
+							&nbsp;</div><center><table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><font color="#999999" size="2">
+								Min length:6,<span lang="en-us"> </span>max 
+								length :32
+								<span lang="en-us">characters</span></font></td>
+							</tr>
+						</table></center><p>　</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label for="regname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+						comfirm password<span class="s1">*</span></label>
+						<input type="password" name="password2" size="22" id="pw2" onblur="checkPasswordValid2()"><div name="response" style="float: right" width="200" id="r3">
+							&nbsp;</div><center><table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><span lang="en-us">
+								<font size="2" color="#999999">Please inter your 
+								password again</font></span></td>
+							</tr>
+						</table></center><p>　</td>
+					</tr>
+										<tr>
+						<td colspan="2"><label for="regname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Your current situation 
+						&amp; how to contact you</label>
+						<input type="hidden" name="rantotal" value=""><input type="hidden" name="step" value="1"><div id="r4" name="response" style="float: right" width="200">
+							&nbsp;</div><center><table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><font color="#999999" size="2">
+								Please describe your current situation and enter your contact 
+								information in less than 240 characters.
+								</font><p>
+								<textarea rows="10" name="situation" cols="71" id="situationArea" onblur="checkSituationValid()"></textarea></td>
+							</tr>
+						</table>
+						<p>　</p>
+						</center><p>　</td>
+					</tr>
+                    <tr>
+						<td><label for="regname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Courses 
+						I registered/interested in (optional)</label>
+						<center>
+							<table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><font size="2" color="#999999">
+								By this, you can easily find the students who 
+								have the courses that you need, and exchange 
+								courses with them!</font>
+		<table border="0" width="900" style="border-collapse: collapse">
+	<tr>
+		<td valign="top">
+		<div style="float: left;">Courses I need but I don&#39;t have</div>
+		<div style="float: right;">Courses I have but I don&#39;t need</div>
+		<hr style="clear: both; visibility: hidden;" />
+		<div class="inputArea" id="">
+		
+		<table border="0" width="100%" style="border-collapse: collapse">
+			<tr>
+				<td width=33% class="smallTitle">
+				<p align="center">Curriculum<br>
+				Abbreviation</td>
+				<td width=33% class="smallTitle">
+				<p align="center">Course<br>
+				Number</td>
+				<td width=33% class="smallTitle">
+				<p align="center">Section</td>
+			</tr>
+			<tr class="inputArea">
+				<td>
+				<p align="center">
+<input type="text" name="N0" size="9" id="n0" tabIndex="1"><br />
+<input type="text" name="N3" size="9" id="n3" tabIndex="2"><br />
+<input type="text" name="N6" size="9" id="n6" tabIndex="3"><br />
+<input type="text" name="N9" size="9" id="n9" tabIndex="4"><br />
+<input type="text" name="N12" size="9" id="n12" tabIndex="5">
+</p>
+</td>
+				<td>
+				<p align="center">
+<input type="text" name="N1" size="9" id="n1" tabIndex="1"><br />
+<input type="text" name="N4" size="9" id="n4" tabIndex="2"><br />
+<input type="text" name="N7" size="9" id="n7" tabIndex="3"><br />
+<input type="text" name="N10" size="9" id="n10" tabIndex="4"><br />
+<input type="text" name="N13" size="9" id="n13" tabIndex="5">
+</p>
+</td>
+				<td>
+				<p align="center">
+<input type="text" name="N2" size="9" id="n2" tabIndex="1"><br />
+<input type="text" name="N5" size="9" id="n5" tabIndex="2"><br />
+<input type="text" name="N8" size="9" id="n8" tabIndex="3"><br />
+<input type="text" name="N11" size="9" id="n11" tabIndex="4"><br />
+<input type="text" name="N14" size="9" id="n14" tabIndex="5">
+</p>
+</td>
+			</tr>
+			</table>
+			</div>
+		<div class="inputArea" style="float: right;">
+		
+		<table border="0" width="100%" style="border-collapse: collapse">
+			<tr>
+				<td width=33% class="smallTitle">
+				<p align="center">Curriculum<br>
+				Abbreviation</td>
+				<td width=33% class="smallTitle">
+				<p align="center">Course<br>
+				Number</td>
+				<td width=33% class="smallTitle">
+				<p align="center">Section</td>
+			</tr>
+			<tr class="inputArea">
+				<td>
+<p align="center">
+<input type="text" name="D0" size="9" id="d0" tabIndex="6"><br />
+<input type="text" name="D3" size="9" id="d3" tabIndex="7"><br />
+<input type="text" name="D6" size="9" id="d6" tabIndex="8"><br />
+<input type="text" name="D9" size="9" id="d9" tabIndex="9"><br />
+<input type="text" name="D12" size="9" id="d12" tabIndex="10"><br />
+</p>
+</td>
+				<td>
+				<p align="center">
+<input type="text" name="D1" size="9" id="d1" tabIndex="6"><br />
+<input type="text" name="D4" size="9" id="d4" tabIndex="7"><br />
+<input type="text" name="D7" size="9" id="d7" tabIndex="8"><br />
+<input type="text" name="D10" size="9" id="d10" tabIndex="9"><br />
+<input type="text" name="D13" size="9" id="d13" tabIndex="10"><br />
+</p>
+</td>
+				<td>
+				<p align="center">
+<input type="text" name="D2" size="9" id="d2" tabIndex="6"><br />
+<input type="text" name="D5" size="9" id="d5" tabIndex="7"><br />
+<input type="text" name="D8" size="9" id="d8" tabIndex="8"><br />
+<input type="text" name="D11" size="9" id="d11" tabIndex="9"><br />
+<input type="text" name="D14" size="9" id="d14" tabIndex="10"><br />
+</p>
+</td>
+			</tr>
+			</table>
+			</div>
+			<input type="hidden" name="needAll" id="needAll" value="" />
+			<input type="hidden" name="dontAll" id="dontAll" value="" />
+			</td>
+	</tr>
+	</table>
+								</td>
+							</tr>
+						</table>
+		<input type="hidden" name="sendCourses" value="" id="hiddenCourses">
+						</center><p>　</td>
+						<td>　</td>
+					</tr>
+					<tr>
+						<td colspan="2"><label for="regname">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="showQuestion">A easy 
+						question</font><span class="s1">*<font color="#000000" id="question"></font></span></label>
+						<input type="text" name="answer" size="4" id="question" onblur="checkCalValid()"><input type="hidden" name="regicon" value="1"><div name="response" style="float: right" width="200" id="r5">
+							&nbsp;</div><center><table border="1" width="50%" style="border-collapse: collapse" bordercolor="#F9F9F9">
+							<tr>
+								<td><font color="#999999" size="2">
+								I&#39;m sure you can do it</font></td>
+							</tr>
+						</table></center><p>　</td>
+					</tr>
+					<tr>
+						<td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<table border="1" style="width: 109px; height: 27; border-collapse: collapse; float: right" bgcolor="#005EAC">
+					<tr>
+						<td>
+						<p align="center"><font color="#FFFFFF" onclick="formSubmit()">submit</font></td>
+					</tr>
+				</table>
+						</td>
+					</tr>
+					</table>
+				</form>
+				</div>
+				</td>
+			</tr>
+						</table>
+						</div></center>
+<script language="javascript">
+	//bottom js
+	document.getElementById("showQuestion").innerHTML = rand1+"+"+rand2+"=";
+	//some other manipulation may still required
+</script>	
+						
+						
+
+
+
+</body>
+
+</html>

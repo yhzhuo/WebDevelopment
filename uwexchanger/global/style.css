@@ -1,0 +1,8 @@
+.header {
+	text-align: center;
+}
+
+hr.layoutLine {
+	clear:both;
+	visibility:hidden;
+}

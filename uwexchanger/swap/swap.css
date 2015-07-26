@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document for swap_main.htm */
+table {
+	border: 0px;
+	table-layout: fixed;
+}
+
+td {
+	word-break: break-all;
+	word-wrap:break-word;
+}

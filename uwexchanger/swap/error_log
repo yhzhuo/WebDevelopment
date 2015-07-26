@@ -1,0 +1,209 @@
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 115
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 116
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/swap/ajax_loadOrigionalPage.php on line 5
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/swap/ajax_loadOrigionalPage.php on line 5
+[29-Nov-2012 02:04:36] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/ajax_loadOrigionalPage.php on line 6
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 115
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 116
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 26
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 26
+[29-Nov-2012 02:04:37] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 115
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 116
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/swap/ajax_loadOrigionalPage.php on line 5
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/swap/ajax_loadOrigionalPage.php on line 5
+[29-Nov-2012 02:05:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/ajax_loadOrigionalPage.php on line 6
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 115
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 116
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/phpparts/global_function.php on line 118
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'sean'@'localhost' (using password: NO) in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 26
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 26
+[29-Nov-2012 02:05:24] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[08-Dec-2012 19:37:43] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[08-Dec-2012 19:37:43] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[08-Dec-2012 19:37:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[08-Dec-2012 19:37:51] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[08-Dec-2012 19:39:15] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[08-Dec-2012 19:39:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[08-Dec-2012 19:39:18] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[08-Dec-2012 19:39:18] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[08-Dec-2012 19:42:51] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[08-Dec-2012 19:43:03] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[08-Dec-2012 19:43:06] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[08-Dec-2012 19:43:39] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[08-Dec-2012 19:43:42] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 27
+[16-Feb-2013 12:06:27] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[16-Feb-2013 12:06:27] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[16-Feb-2013 12:06:33] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[16-Feb-2013 12:06:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[16-Feb-2013 12:11:50] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[16-Feb-2013 12:11:50] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[16-Feb-2013 12:11:54] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 106
+[16-Feb-2013 12:11:54] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 125
+[24-Feb-2013 15:31:48] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 02:30:56] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 03:10:44] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 03:10:59] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 03:12:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 04:00:13] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 12:31:00] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:36:00] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:36:24] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:38:04] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:44:30] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:44:49] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:46:37] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 13:47:46] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:06:42] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:06:48] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:07:23] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:08:06] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:22:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:31:01] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 14:31:24] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 15:51:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 16:56:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 16:57:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 16:57:39] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 16:58:27] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 16:58:43] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 16:59:40] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 22:35:44] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 22:35:50] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 22:35:53] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 22:35:59] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 22:36:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Feb-2013 22:37:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Feb-2013 16:43:14] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Feb-2013 17:22:51] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Feb-2013 17:23:14] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Feb-2013 22:15:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-Feb-2013 22:32:57] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-Feb-2013 22:39:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[01-Mar-2013 18:09:11] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[04-Mar-2013 22:42:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[09-Mar-2013 17:05:47] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[09-Mar-2013 17:06:11] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[09-Mar-2013 17:11:56] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-Mar-2013 02:05:35] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[24-Mar-2013 17:05:36] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Mar-2013 13:58:35] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Mar-2013 16:27:42] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Mar-2013 00:31:27] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Mar-2013 01:43:20] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Mar-2013 01:51:09] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Mar-2013 14:48:39] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[26-Mar-2013 15:25:30] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-Mar-2013 19:46:51] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[09-Apr-2013 20:54:22] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[17-Apr-2013 19:37:04] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[17-Apr-2013 19:37:18] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-Apr-2013 19:07:32] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-Apr-2013 19:07:40] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-Apr-2013 19:07:41] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-Apr-2013 19:08:01] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:11:12] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:12:19] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:12:23] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:12:26] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:12:27] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:13:22] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:14:26] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:14:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:14:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:26:24] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:26:25] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:26:25] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:26:25] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:26:25] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:30] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 07:32:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:24] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:25] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:35] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:35] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:30:35] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:36:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:36:33] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:36:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[21-May-2013 17:36:34] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[08-Jul-2013 16:22:42] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Jul-2013 06:19:41] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Jul-2013 06:20:09] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Jul-2013 06:20:41] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[25-Jul-2013 06:20:55] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[31-Aug-2013 14:04:51] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[31-Aug-2013 22:43:53] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[12-Sep-2013 20:42:39] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[12-Sep-2013 20:42:44] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[12-Sep-2013 20:42:47] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[12-Sep-2013 20:43:01] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[12-Sep-2013 22:43:21] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[15-Sep-2013 06:20:57] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[20-Sep-2013 19:40:31] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[13-Mar-2014 17:25:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[20-Mar-2014 19:49:01] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:24] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:27] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:28] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:28] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:28] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:28] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:29] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:29] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:29] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:29] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:30] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:46] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:00:47] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:03] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:04] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:04] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:05] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:05] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:05] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:13] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:14] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:15] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2014 17:01:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[04-Apr-2014 18:02:35] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[28-Apr-2014 02:03:49] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[28-Apr-2014 02:09:57] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-May-2014 19:44:09] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-May-2014 20:30:16] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-May-2014 20:54:10] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-May-2014 21:27:42] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-May-2014 21:27:59] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-May-2014 21:28:14] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[01-Jun-2014 19:39:36] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[03-Jun-2014 21:40:32] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[24-Oct-2014 11:37:44] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[27-Oct-2014 20:01:24] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[28-Mar-2015 16:51:00] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[30-Mar-2015 21:23:32] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[13-Apr-2015 17:43:03] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154
+[18-Apr-2015 21:48:44] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home1/ninzerhd/public_html/uwexchanger/swap/swap_list_request.php on line 154

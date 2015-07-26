@@ -1,0 +1,27 @@
+<?php
+	
+	if(array_key_exists('username',$_COOKIE)) {//has cookie
+		$username = $_COOKIE[username];    //$_COOKIE[yhid]
+		$href = "logout.php";
+		$action = "logout";                //(Sign Up; Login; User information and logout)
+	} elseif($type == "login") {
+		$href = "register.php";
+		$action = "Sign Up";
+	} else {      //sign up
+		$href = "login.php";
+		$action = "login";
+	}
+?>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="index.php">UWexchanger</a>
+				<ul class="nav">
+					<li><a href="index.php">Home</a></li>
+					<li><a href="instruction.php">What's UWexchanger?</a></li> <!-- class="active" -->
+				</ul>
+				<ul class="nav pull-right">
+					<li><a href="#"> <?php echo $username; ?></a></li>
+					<li><a href="<?php echo $href; ?>"><?php echo $action; ?></a></li>
+				</ul>
+			</div>
+		</div>
