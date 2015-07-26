@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+	var para = $("p");
+	var btn = $(".btn1");
+    if(para.css("display") == "none") {	
+	  
+	  btn.hide(1000);
+	  btn.text("隐藏");
+	  para.show(1000);
+	  btn.show(1000);
+	} else {
+	  btn.hide(1000);
+	  btn.text("显示更多");
+	  para.hide(1000);
+	  btn.show(1000);
+	}
+  });
+  /*
+  $(".btn2").click(function(){
+    $("p").fadeIn(1000);
+  });
+  */
+});
+</script>
+
+
+<style>
+ul {
+	background-color: #666;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 5px;
+	overflow: hidden;
+	/*width: 100%;*/
+	border-radius: 5px 5px 35px 35px;
+	width: 100%;
+	/*navigation bar 背景色*/background-color: rgba(0,0,0,0.3)/*rgba(153,153,153,1)*/
+}
+li {
+	float: left;
+	text-align: center;
+	padding: 0px;/*width:8%;*/
+}
+a:link, a:visited {
+	display: block;
+	width: 100px;
+	color: #F7F7F7;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	border-radius: 3px;
+	/*按钮色*/background-color: rgba(255,255,255,0.12);
+}
+/*按钮 hover and active 特效*/
+a.A:hover, a.C:hover {
+	background-color: #ffd5e5;
+}
+a.A:active, a.C:active {
+	background-color: #CCF;
+}
+a.B:hover, a.D:hover {
+	background-color: #66e9ff;
+}
+a.B:active, a.D:active {
+	background-color: #6CF;
+}
+/*END*/
+
+/*home 找一找 联系我们 等 按钮边角弧度数据*/
+a.A {
+	border-radius: 8px 0px 0px 8px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+}
+a.B, a.C {
+	border-radius: 0px;
+}
+a.D {
+	border-radius: 0px 8px 8px 0px;
+}
+/*END*/
+a {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	width: 2%;
+	position: relative;
+	top: 3px;
+}
+a.F{
+	background-color:rgba(255,255,255,0);
+	width:auto;
+	/*position:relative;
+	right:5%;*/
+}
+div {
+	width: 100%;
+	position: relative;
+	top: -7px;
+}
+li.A {
+	margin-left: 25px;
+	margin-right: 15px;/*padding-bottom:0px;
+	margin-bottom:0px;*/
+}
+/*logo 图片大小*/
+img {
+	width: 30x;
+	height: 30px;
+}
+/*END*/
+.btn1{
+	position: relative;
+	left:auto;
+	right:auto;
+	top:10px;
+	border:none;
+	margin-top:2px;
+	margin-bottom:9px;
+	border-radius: 6px 6px 6px 6px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+div.btn{
+		position:absulote;
+		bottom:10%;
+		left:30%;
+		width:auto;
+		padding-left:10px;
+		padding-right:10px;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <ul>
+    <li class="A"> <img src="../Dropbox/bingjing's first site/logo.svg" alt="logo"> </li>
+   <li><a class="A" href="#home">Home</a></li>
+   <li><a class="B" href="#找一找">搜索</a></li>
+   <li><a class="C" href="#联系">联系我们</a></li>
+   <li><a class="D"href="#关于">关于</a></li>
+   <li>
+     <div class="btn"><p>恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器<a class="F" href="#找一找"><img src="../Dropbox/bingjing's first site/logo.svg"></a>恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器恋爱神器</p>
+      <button class="btn1">隐藏</button>
+      <!-- <button class="btn2">打开</button> -->
+     </div>
+   </li>
+  </ul>
+</div>
+</body>
+</html>

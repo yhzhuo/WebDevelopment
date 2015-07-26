@@ -1,0 +1,177 @@
+div.navBarWrapper {
+	position: fixed;
+	width: 100%;
+	background--color:#FFFFFF;
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	z-index:1;
+}
+
+div.navBar {
+	width: 966px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.mainWrapper {
+	width: 966px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	height: 100%;
+}
+
+hr.layOutLine {
+	width: 100%;
+	clear: both;
+	visibility: hidden;
+}
+
+div.layOutLine {
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+div.navBar  li {
+	width: 40px;
+	/* float: left; */
+	display: inline;
+	text-align: center;
+}
+
+div.verticalLayoutHelper {
+	height: 112%; 
+	width:0px; 
+	margin-top:-7px; 
+	vertical-align: middle; 
+	display: inline-block;
+}
+
+.standardRadius {
+	-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+			border-radius: 10px;
+}
+
+
+/*<bingjing's first code of navigation bar>*/
+ul.navbar_ {
+	background-color: #666;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 5px;
+	overflow: hidden;
+	/*width: 100%;*/
+	border-radius: 5px 5px 35px 35px;
+	width: 100%;
+	/*navigation bar 背景色*/background-color: rgba(0,0,0,0.3)/*rgba(153,153,153,1)*/
+}
+ul.navbar_ li {
+	float: left;
+	text-align: center;
+	padding: 5px 0px 5px 0px;/*width:8%;*/
+}
+ul.navbar_ a:link, ul.navbar_ a:visited {
+	display: block;
+	width: 100px;
+	color: #F7F7F7;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	border-radius: 3px;
+	/*按钮色*/background-color: rgba(255,255,255,0.12);
+}
+/*按钮 hover and active 特效*/
+/*
+a.navbar_myhome:hover, a.navbar_contact:hover {
+	background-color: #ffd5e5;
+}
+a.navbar_myhome:active, a.navbar_contact:active {
+	background-color: #CCF;
+}
+a.navbar_find:hover, a.navbar_about:hover {
+	background-color: #66e9ff;
+}
+a.navbar_find:active, a.navbar_about:active {
+	background-color: #6CF;
+}
+*/
+/*END*/
+
+/*home 找一找 联系我们 等 按钮边角弧度数据*/
+a.navbar_myhome {
+	border-radius: 8px 0px 0px 8px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+}
+a.navbar_find, a.navbar_contact {
+	border-radius: 0px;
+}
+a.navbar_about {
+	border-radius: 0px 8px 8px 0px;
+}
+/*END*/
+ul.navbar_ a {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	width: 2%;
+	position: relative;
+	top: 3px;
+}
+a.F{
+	background-color:rgba(255,255,255,0);
+	width:auto;
+	/*position:relative;
+	right:5%;*/
+}
+div.navbar_ {
+	width: 100%;
+	position: fixed;
+	top: -5px;
+	z-index: 2;
+}
+li.navbar_myhome {
+	margin-left: 25px;
+	margin-right: 15px;/*padding-bottom:0px;
+	margin-bottom:0px;*/
+}
+/*logo 图片大小*/
+div.navbar_ img {
+	
+	height: 30px;
+	margin-left: 30px;
+	margin-right: 20px;
+	
+}
+/*END*/
+/*
+.btn1{
+	position: relative;
+	left:auto;
+	right:auto;
+	top:10px;
+	border:none;
+	margin-top:2px;
+	margin-bottom:9px;
+	border-radius: 6px 6px 6px 6px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+div.btn{
+		position:absulote;
+		bottom:10%;
+		left:30%;
+		width:auto;
+		padding-left:10px;
+		padding-right:10px;
+}
+*/
+/*</bingjing's first code of navigation bar>*/

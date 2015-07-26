@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title></title>    <!--  主页Orz -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="global/global.css" rel="stylesheet" />
+		<link href="home/home.css" rel="stylesheet" />
+		<meta http-equiv="Content-Language" content="zh-cn">
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="home/home.js"></script>
+		<script src="global/global.js"></script>
+		<script src="global/jquery.animate-shadow-min.js"></script>
+	</head>
+	<body onload="load()">
+		<?php
+			include("global/top.htm");
+		?>
+		<div class="mainWrapper">
+			<div class="leftRegion">
+				<div class="infoWrapper standardRadius">
+					<div class="folder"> 
+						<div class="verticalLayoutHelper"></div>
+						<div class="tab stepPrint standardRadius" style="margin-right: 20px; margin-left: 20px;">
+							<div class="verticalLayoutHelper"></div>
+							<span>访&nbsp;问&nbsp;脚&nbsp;印</span>
+						</div>
+						<div class="tab hostInfo standardRadius">
+							<div class="verticalLayoutHelper"></div>
+							<span>ddddd</span>
+						</div> <!--  xxx的信息 -->
+					</div>
+					<div class="infoContent" >
+						<div class="infoDisplay hostInfo standardRadius" id="hostInfo">
+							<div class="infoBoxPublic standardRadius" >
+								<p class="profileTitle">公开信息</p>
+								<!-- <div class="verticalLayoutHelper"></div> -->
+								<img src="" class="img-polaroid profilePic" />
+								<div class="specificInfoBox">
+									<span>网名:</span><input type="text" name="public_name" id="public_name" />
+								</div>
+								<!-- <div class="verticalLayoutHelper"></div> -->
+								<textarea name="public_description" id="public_description"></textarea>
+							</div>
+							<div class="infoBoxPrivate standardRadius" style="opacity:1.0; filter:alpha(opacity=100); " >
+								<p class="profileTitle">真实信息</p>
+								<img src="" class="img-polaroid profilePic" />
+								<div class="specificInfoBox">
+									<span>姓名:</span><input type="text" name="private_name" id="private_name" />
+									<span>年龄:</span><input type="text" name="private_age" id="private_age" />
+									<span>地区:</span><input type="text" name="private_region" id="private_region" />
+									<span>圈子:</span><input type="text" name="private_cicle" id="private_cicle" />
+								</div>
+								<textarea name="private_description" id="private_description"></textarea>
+							</div>
+						</div>
+						<div class="buttonWrapper">
+							<div class="imHost">
+								<button style="margin-left: 210px;" class="btn btn-danger btn-info btn-block">修改资料</button>
+								<button class="btn btn-danger btn-info btn-block">提交</button>
+							</div>
+							<div class="imNotHost">
+								<button class="btn btn-danger btn-large btn-block">发送请求</button>
+							</div>
+						</div>
+						<div class="infoDisplay stepPrint standardRadius" id="stepPrint">
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="rightRegion">
+				<div class="contactBox">
+					<div class="innerWrapper">
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="pictures">
+			<div class="innerPartPicBox">
+				<table class="innerPartPicTable">
+				<tr>
+				<td style="width: 40px"><button class="btn btn-block"><</button></td>
+				<td><div id="pictureContainer"></div></td>
+				<td style="width: 40px"><button class="btn btn-block">></button></td>
+				</tr>
+				</table>
+			</div>
+		</div>
+		
+	</body>
+</html>

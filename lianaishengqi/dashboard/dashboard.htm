@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>找一找O.O</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="global/global.css" rel="stylesheet" />
+		<link href="dashboard/dashboard.css" rel="stylesheet" />
+		<meta http-equiv="Content-Language" content="zh-cn">
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<?php
+			include("global/top.htm");
+		?>
+		<div class="mainWrapper">
+			<div class="searchBar">
+				<form action="" method="post">
+					<div class="selectGroup">
+						<span class="selectOptionTitie">我要找<span>
+						<select name="gender">
+						  <option value="1">女性朋友</option>
+						  <option value="0">男性朋友</option>
+						</select>
+					</div>
+					
+					<div class="selectGroup">
+						<span class="selectOptionTitie">年龄<span>
+						<select class="age" name="startAge"></select>
+						<span class="selectOptionTitie">到<span>
+						<select class="age" name="endAge"></select>
+					</div>
+					
+					<div class="selectGroup">
+						<span class="selectOptionTitie">地区<span>
+						<select name="country" style="width: 120px;">
+							<option value="-1">请选择国家</option>
+							<option value="china">中国</option>
+							<option value="america">美国</option>
+						</select>
+						<div id="regionContainer">
+							<!--
+							<select name="province"></select>
+							<select name="city"></select>
+							-->
+						</div>
+						
+					</div>
+					
+					<div class="selectGroup">
+						
+						<div id="quanziContainer"></div> <!-- load the quanzi info after know the area -->
+						<!--
+						<span class="selectOptionTitie">圈子<span>
+						<select>
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="opel">Opel</option>
+						  <option value="audi">Audi</option>
+						</select>
+						-->
+					</div>
+					<div class="selectGroup" style="float: right; margin-right: 20px;">
+						<input type="button" value="搜索!!!" style="width: 113px;" class="btn btn-large btn-block login btn-danger" />
+					</div>
+				</form>
+				
+			</div>
+			<div class="layOutLine"> </div>
+			<div class="peopleList">
+				
+			</div>
+			<div class="layOutLine"> </div>
+			<div class="buttonContainer">
+				<button class="btn btn-large btn-block login btn-success" style="width: 100%;" >
+				更&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				多&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				(^.^)</button>
+			</div>
+		</div>
+	</body>
+</html>
